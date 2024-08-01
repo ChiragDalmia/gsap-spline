@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HackCanada 2025</title>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
   <style>
     body,
     html {
@@ -12,7 +13,7 @@
       padding: 0;
       font-family: Arial, sans-serif;
     }
-
+    
     section {
       height: 100vh;
       display: flex;
@@ -23,9 +24,9 @@
       padding: 20px;
       box-sizing: border-box;
     }
-
+    
     .animated-element {
-      width: 300px;
+      min-width: 500px;
       padding: 20px;
       color: white;
       display: flex;
@@ -39,10 +40,8 @@
 </head>
 
 <body>
-  <div class="animated-element">
-    <h2>
-      Hey motherfucker
-    </h2>
+  <div class="">
+      <spline-viewer url="https://prod.spline.design/7CobhRJFJAnjKcN0/scene.splinecode"></spline-viewer>
     <p>
       This is a simple card with a little description motherfucker
     </p>
