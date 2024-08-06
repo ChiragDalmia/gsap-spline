@@ -3,19 +3,25 @@ import Model from "@/components/Model";
 export default function Home() {
   return (
     <main className="">
-      <Model/>
+      <Model />
       <header>
         Hackathons Canada <br /> 2025
       </header>
-      <section>About</section>
-      <section>Sponsors & Partners</section>
-
-      <section>Join Discord</section>
-
-      <section>FAQ</section>
-
-      <section>Location</section>
-
+      <section className="sectionRight" id="about">
+        About
+      </section>
+      <section className="sectionLeft" id="sponsors">
+        Sponsors & Partners
+      </section>
+      <section className="sectionRight" id="joinDiscord">
+        Join Discord
+      </section>
+      <section className="sectionLeft" id="faq">
+        FAQ
+      </section>
+      <section className="sectionRight" id="location">
+        Location
+      </section>
       <footer>Footer</footer>
     </main>
   );

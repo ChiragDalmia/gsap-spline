@@ -1,7 +1,19 @@
-import React from "react";
+// components/ModelWrapper.tsx
 
-const Model = () => {
-  return <div>Model</div>;
+import React, { Suspense } from "react";
+import dynamic from "next/dynamic";
+
+const ModelClient = dynamic(() => import("./ModelClient"), {
+  ssr: false,
+  loading: () => <div></div>,
+});
+
+const ModelWrapper: React.FC = () => {
+  return (
+    <Suspense fallback={<div></div>}>
+      <ModelClient />
+    </Suspense>
+  );
 };
 
-export default Model;
+export default ModelWrapper;
