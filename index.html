@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HackCanada 2025</title>
   <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.3/build/spline-viewer.js"></script>
+ 
   <style>
     body,
     html {
@@ -26,14 +27,12 @@
     }
     
     .animated-element {
-      min-width: 500px;
-      padding: 20px;
+      width: 600px;
+
       color: white;
       display: flex;
       flex-direction: column;
-      background-color: #9400df;
       border-radius: 8px;
-      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
       position: relative;
     }
   </style>
@@ -41,7 +40,7 @@
 
 <body>
   <div class="">
-      <spline-viewer url="https://prod.spline.design/7CobhRJFJAnjKcN0/scene.splinecode"></spline-viewer>
+      <spline-viewer url="https://prod.spline.design/7CobhRJFJAnjKcN0/scene.splinecode" class="animated-element"></spline-viewer>
     <p>
       This is a simple card with a little description motherfucker
     </p>
@@ -88,12 +87,11 @@
 
     // Initial position
     gsap.set('.animated-element', {
-      position: 'fixed',
+      position: 'absolute',
       top: '50%',
       left: '80%',
       xPercent: -50,
       yPercent: -50,
-      zIndex: -1000,
     });
     // Create the animation timeline
     let tl = gsap.timeline({
