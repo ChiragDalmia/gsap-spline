@@ -1,5 +1,4 @@
 import Model from "@/components/Model";
-import Image from "next/image";
 
 export default function Home() {
   return (
