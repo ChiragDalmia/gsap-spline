@@ -4,44 +4,47 @@
 
 
 
- body,
- html {
-   margin: 0;
-   padding: 0px;
-   font-family: Arial, sans-serif;
-   background-color: #CDF6FF;
- }
 
- header,
- section,
- footer {
-   width: 100%;
-   height: 100svh;
-   display: flex;
-  justify-content: center;
-    align-items: center;
-   text-align: center;
-   font-size: 6rem;
-   position: relative;
-   z-index: 1;
- }
-
-.sectionRight{
-justify-content: end;
-  align-items: center;
-}
-.sectionLeft {
-  justify-content: start;
-  align-items: center;
-}
- #model {
-  width: 100%;
-  height: 100%;
-   position: fixed;
-   z-index: 0;
- }
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+    body,
+    html {
+      margin: 0;
+      padding: 0px;
+      font-family: Arial, sans-serif;
+      background-color: #CDF6FF;
+    }
+  
+    header,
+    section,
+    footer {
+      width: 100%;
+      height: 100svh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      font-size: 6rem;
+      position: relative;
+      z-index: 1;
+    }
+  
+    .sectionRight {
+      justify-content: end;
+      align-items: center;
+    }
+  
+    .sectionLeft {
+      justify-content: start;
+      align-items: center;
+    }
+  
+    #model {
+      width: 100%;
+      height: 100%;
+      position: fixed;
+      z-index: 0;
+    }
 }

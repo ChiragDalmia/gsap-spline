@@ -1,3 +1,4 @@
+import Cloud from "@/components/Cloud";
 import Model from "@/components/Model";
 
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main className="">
       <Model />
       <header>
+      <Cloud />
         Hackathons Canada <br /> 2025
       </header>
       <section className="sectionRight" id="about">
